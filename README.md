@@ -27,4 +27,14 @@ Implementing the RoBERTa w. CNQA on the PhysicalIQA dataset with a few modificat
     * Fixed the error and installed proper versions of certain libraries like pytorch lightning.
     * Ran into CUDA out of memory. So reduced the training data size into 5000 instances.
  4. Understanding how PyTorch and the forward function works.
-    
+
+ ### Stutee:
+ 1. Executed the stable branch of the ai2 model on my local computer.
+    * Installed dependencies to run the project.
+    * The program ran into CUDA out of memory exception while still executing the first Epoch.
+ 2. Implemented the Master branch of the model.
+    * Resolved dependencies.
+    * Ran into AttributeError. Tried to fix the error by modifying the code, could not resolve the issues successfully.
+ 3. Learning the use of PyTorch with respect to its use in RoBERTa.
+ 4. Investigating the dataset to comprehend how the model is trained and what might be changed to help improve accuracy of the system.
+
