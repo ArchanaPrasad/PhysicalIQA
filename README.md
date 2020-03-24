@@ -38,3 +38,14 @@ Implementing the RoBERTa w. CNQA on the PhysicalIQA dataset with a few modificat
  3. Learning the use of PyTorch with respect to how it implements BERT and RoBERTa.
  4. Investigating the dataset to comprehend how the model is trained and what might be changed to help improve accuracy of the system.
 
+### Simran:
+1. Ran the master version of the ai2 model on my local computer.
+    * Faced certain problems installing apex and implementing it in the code.
+    * Faced certain problems with the class label error.
+2. Executed the branch of the ai2 model on my local computer with less data.
+    * Installed dependencies to run the project.
+    * The model was trained with the given data.
+    * Evaluated the same model and got 0.2 as F1 score, 95.0 as confidence and 22.8 as accuracy.
+3. Interpreting and understanding dataset given to train the model.
+4. Trying to implement McQueen model on my local computer with less data.
+
