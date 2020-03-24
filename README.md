@@ -1,6 +1,8 @@
 Implementing the RoBERTa w. CNQA on the PhysicalIQA dataset with a few modifications.
-    1. With 5000 instances of training data.
-    2. Batch size = 2
+1. With 5000 instances of training data.
+2. Batch size = 2
+
+Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/blob/ai2_stable/README.md
     
 ## Tasks in Progress:
     1. Implementing the base model.
