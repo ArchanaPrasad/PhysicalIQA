@@ -7,7 +7,7 @@ Implementing the RoBERTa w. CNQA on the PhysicalIQA dataset with a few modificat
 Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/blob/ai2_stable/README.md
     
 ## Tasks in Progress:
-    1. Implementing the base model.
+    1. Improving the acuuracy of the base model.
     2. Learning common implementations in PyTorch.
     3. How to do error analysis.
     
@@ -31,6 +31,7 @@ Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/bl
     * Fixed the error and installed proper versions of certain libraries like pytorch lightning.
     * Ran into CUDA out of memory. So reduced the training data size into 5000 instances.
  4. Understanding how PyTorch and the forward function works.
+ 5. Implemented the base model successfully with a F1 score of 0.528.
 
  ### Stutee:
  1. Executed the stable branch of the ai2 model on my local computer.
