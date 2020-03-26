@@ -54,4 +54,7 @@ Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/bl
     * Evaluated the same model and got 0.2 as F1 score, 95.0 as confidence and 22.8 as accuracy.
 3. Interpreting and understanding dataset given to train the model.
 4. Trying to implement McQueen model on my local computer with less data.
+    * Wrote a script to transform the dataset as per requirements of the code
+    * Faced certain errors and tried solving them.
+5. Learning about PyTorch and its usage to understand the code implementation.
 
