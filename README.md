@@ -32,6 +32,7 @@ Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/bl
     * Ran into CUDA out of memory. So reduced the training data size into 5000 instances.
  4. Understanding how PyTorch and the forward function works.
  5. Implemented the base model successfully with a F1 score of 0.528.
+ 6. Improved the accuracy of the CNQA model to 0.69 using 6000 rows of training data.
 
  ### Stutee:
  1. Executed the stable branch of the ai2 model on my local computer.
