@@ -33,6 +33,7 @@ Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/bl
  4. Understanding how PyTorch and the forward function works.
  5. Implemented the base model successfully with a F1 score of 0.528.
  6. Improved the accuracy of the CNQA model to 0.69 using 6000 rows of training data.
+ 7. Performed error analysis on the results produced by different models and found some inisghts on why the models were not able to predict the correct answers for certain questions.
 
  ### Stutee:
  1. Executed the stable branch of the ai2 model on my local computer.
@@ -59,17 +60,17 @@ Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/bl
 5. Learning about PyTorch and its usage to understand the code implementation.
 
 ### Haseeb:
-1. Executed ai2 master branch on local computer:
-        Fixed issues related to library/module (CPU only modules)
-	Training started succesfully but ran for nearly 2 days and then failed due to memory allocation error
-2. Executed ai2 stable branch on local computer:
+1.Executed ai2 master branch on local computer:
+        * Fixed issues related to library/module (CPU only modules)
+	*Training started succesfully but ran for nearly 2 days and then failed due to memory allocation error
+2.Executed ai2 stable branch on local computer:
 	Model ran for 1 epoch, created a checkpoint and then got stuck in a saving checkpoint loop - couldnt resolve further
 	Ran the evaluation script with the created checkpoint but ran into library version errors
-3. Executed ai2 master branch on colab:
+3.Executed ai2 master branch on colab:
 	lazy_trainer_dataloader error - fixed by using the stable branch
-4. Executed ai2 stable branch on colab:
+4.Executed ai2 stable branch on colab:
 	Fixed the lazy_trainer_dataloader error by installing pytorch 1.2.0 and corresponding torchvision library
 	Ran into CUDA out of memory. So reduced the training data size
-5. Base model ran successfully. Obtained F1 score of 0.517 with 5000 training size
-6. Error sheet analysis
+5.Base model ran successfully. Obtained F1 score of 0.517 with 5000 training size
+6.Error sheet analysis
 
