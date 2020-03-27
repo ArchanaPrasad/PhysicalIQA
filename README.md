@@ -60,8 +60,8 @@ Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/bl
 
 ### Haseeb:
 1.Executed ai2 master branch on local computer:
-        Fixed issues related to library/module (CPU only modules)
-	Training started succesfully but ran for nearly 2 days and then failed due to memory allocation error
+        * Fixed issues related to library/module (CPU only modules)
+	*Training started succesfully but ran for nearly 2 days and then failed due to memory allocation error
 2.Executed ai2 stable branch on local computer:
 	Model ran for 1 epoch, created a checkpoint and then got stuck in a saving checkpoint loop - couldnt resolve further
 	Ran the evaluation script with the created checkpoint but ran into library version errors
