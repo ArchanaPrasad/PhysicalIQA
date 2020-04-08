@@ -21,6 +21,7 @@ Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/bl
  ## Contributions:
  
  ### Archana:
+ #### Phase 1:
  1. Ran the master branch of the ai2 model on my local computer.
     * Faced problems related to versions of the required modules and fixed them.
     * Came across some unresolvable errors.
@@ -33,7 +34,16 @@ Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/bl
  4. Understanding how PyTorch and the forward function works.
  5. Implemented the base model successfully with a F1 score of 0.528.
  6. Improved the accuracy of the CNQA model to 0.69 using 6000 rows of training data.
- 7. Performed error analysis on the results produced by different models and found some inisghts on why the models were not able to predict the correct answers for certain questions.
+ 7. Learnt to perform error analysis.
+ 8. Performed error analysis on the results produced by different models and found some inisghts on why the models were not able to predict the correct answers for certain questions.
+ 
+ #### Phase 2:
+ 1. After performing the error analysis on the McQueen data shared to us, I looked at the instances where the model had failed and tried to find similarities between the failures.
+ 2. Found that there were many examples where the model was not able to distinguish between prepositions that mark sematic roles.
+ 3. So I came up with the idea to, identify such prepositions and to perturb them with similar possible replacement words.
+ 4. This inturn would result in an expanded dataset. The model might be able to learn better by introducing Question and Answer pairs that are highly positive cases and that are highly negative cases.
+ 5. Working currently on identifying the possible set of replacement tokens that would make sense with the instances under consideration.
+ 
 
  ### Stutee:
  1. Executed the stable branch of the ai2 model on my local computer.
