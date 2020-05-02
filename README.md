@@ -53,7 +53,7 @@ Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/bl
   #### Phase 2:
  1. After looking at the dataset, going through McQueen model's report and comparing it with the source of the data, I noticed how the training data was retrieved.
  2. So, I looked for data retrieval and modification techniques to use the same data source and retrieve more relevant information.
- 3. By providing the same information with a little modification, the system can be trained to link a particular question to a particular set of answers. This modification can be done by replacing original words with new words having similar vector representation.
+ 3. By providing the same information mutltiple times with a little modification, the system can be trained to link a particular question to a particular set of answers. This modification can be done by replacing original words with new words having similar vector representation.
  4. The rationale behind this idea is that the machine will link a group of words with similar vector representations in the question to a group of words with similar vector representation in the answer.
  
 
