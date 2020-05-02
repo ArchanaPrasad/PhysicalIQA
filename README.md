@@ -5,19 +5,7 @@ Implementing the RoBERTa w. CNQA on the PhysicalIQA dataset with a few modificat
 2. Batch size = 4
 
 Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/blob/ai2_stable/README.md
-    
-## Tasks in Progress:
-    1. Improving the acuuracy of the base model.
-    2. Learning common implementations in PyTorch.
-    3. How to do error analysis.
-    
-## Future Tasks:
-1. [ ] Analysing the output of the base model - CNQA
-2. [ ] Implementing the McQueen model.
-3. [ ] Analysing the error analysis provided by Kuntal for the McQueen model to come up with some categorizaiton, which when solved will          improve the accuracy.
-4. [ ] Identify where improvements could be made on the CNQA model.
-    
-    
+   
  ## Contributions:
  
  ### Archana:
@@ -43,6 +31,12 @@ Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/bl
  3. So I came up with the idea to, identify such prepositions and to perturb them with similar possible replacement words.
  4. This inturn would result in an expanded dataset. The model might be able to learn better by introducing Question and Answer pairs that are highly positive cases and that are highly negative cases.
  5. Working currently on identifying the possible set of replacement tokens that would make sense with the instances under consideration.
+ 
+ ####Phase 3:
+ 1. I Created a dataset with extra 400 samples that are made up of additional question answer pairs which are different from each other by the prepositions that were present(if any) in the original question answer pair.
+ 2. I used Spacy similarity to identify how similar the sentences are with respect to presence of differnet prepositions in them which was not useful. I went ahead with using common sense knowledge to identify similar and dissimilar prepositions.
+ 3. The additional set consists of both positive and negative samples.
+ 4. I Ran the CNQA base model with this tweaked data set for the same number of samples(6000) was observed an increase in the accuracy to 0.725.
  
 
  ### Stutee:
