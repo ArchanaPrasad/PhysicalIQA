@@ -97,6 +97,8 @@ Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/bl
  6. The analysis showed that there were certain agmented sentences which might not effect the accuracy, but there were certain sentences that would effect the accuracy but since it is not tested, it is still unknown.
 
 ### Haseeb:
+
+ #### Phase 1:
 1. Executed ai2 master branch on local computer:
         * Fixed issues related to library/module (CPU only modules)
 	* Training started succesfully but ran for nearly 2 days and then failed due to memory allocation error
@@ -110,4 +112,17 @@ Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/bl
 	* Ran into CUDA out of memory. So reduced the training data size
 5. Base model ran successfully. Obtained F1 score of 0.517 with 5000 training size
 6. Error sheet analysis
+
+ #### Phase 2:
+  1. From the initial error analysis I found that there are instances where the relevant information was available easily.
+  2. This information was not available in the wikihow file which was the primary source for knowledge in the original model.
+  3. I started working on an algorithm to fetch context during runtime from internet
+  4. Using wikipedia api libraries, I was able to design an algorithm, wiki_data_extractor, to use the question of an example as a query and fetch a wikipedia page object. Using this a summary passage can be extracted from to be used as context for selected example.
+ 
+ #### Phase 3:
+ 1. I made  further enhancements to the wiki_data_extractor algorithm to rectify the initial search errors. Ouput file contains query, wikipedia result, wikipedia summary (train_wiki_data.csv)
+ 2. Also created a modified version of the script to combine the question and solutions of each example to create two queries and using them to fetch data from wikipedia (train_wiki_data_with_sols.csv)
+ 3. Wikipedia lookups for each example took about 1 to 2 seconds. For training dataset of  16,000+ examples the total runtime was 4+ hours. To reduce this I created a python script to run the algorithm parellely and then combine the resulting files. This reduces runtime to less than an hour.
+ 4. Tried to execute McQueen model on colab (McQueen_colab.ipynb) as well as install elasticsearch on colab. Ran into elasticsearch server related issues and other 'files missing' error.
+
 
