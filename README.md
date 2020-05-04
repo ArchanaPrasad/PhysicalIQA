@@ -61,18 +61,40 @@ Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/bl
 
 
 ### Simran:
-1. Ran the master version of the ai2 model on my local computer.
+ #### Phase 1:
+ 1. Ran the master version of the ai2 model on my local computer.
     * Faced certain problems installing apex and implementing it in the code.
     * Faced certain problems with the class label error.
-2. Executed the branch of the ai2 model on my local computer with less data.
+ 2. Executed the branch of the ai2 model on my local computer with less data.
     * Installed dependencies to run the project.
     * The model was trained with the given data.
     * Evaluated the same model and got 0.2 as F1 score, 95.0 as confidence and 22.8 as accuracy.
-3. Interpreting and understanding dataset given to train the model.
-4. Trying to implement McQueen model on my local computer with less data.
+ 3. Interpreting and understanding dataset given to train the model.
+ 4. Trying to implement McQueen model on my local computer with less data.
     * Wrote a script to transform the dataset as per requirements of the code
     * Faced certain errors and tried solving them.
-5. Learning about PyTorch and its usage to understand the code implementation.
+ 5. Learning about PyTorch and its usage to understand the code implementation.
+ 
+ #### Phase 2:
+ 1. After performing the error analysis on the McQueen data shared to us, I looked at the instances where the model had failed and tried to find similarities between the failures.
+ 2. Found that there were many examples where the model was not able to distinguish identify the correct solution even if the answer was given to the model while training in the form of wikihow data.
+ 3. So I came up with the idea to, identify such instances where the goal statement could be augmented and could be added to the dataset.
+ 4. This inturn would result in an expanded dataset. The model might be able to learn better by introducing Question and Answer pairs.
+ 5. Working currently on identifying how the text could be augmented. Found certain github repositories which could help us achieve the goal.
+ 
+ #### Phase 3:
+ 1. Worked and researched on the github repositories found in phase 2, which could help in text augmentation.
+ 2. Found 1 repository which was built upon NLTK and WORDNET which could achieve our goal with the help of:
+    * Synonym Replacement (SR)
+    * Random Insertion (RI)
+    * Random Swap (RS)
+    * Random Deletion (RD)
+ 3. Implemented this to augment the dataset.
+    * Since our dataset was in different format, the codebase for this had to be changed and adjusted according to our dataset format.
+    * Number of augments was given as a parameter to the code.
+ 4. Tried expanding the dataset with number of augmented goals as 3 at first but the data was too large and could not be executed even in COLAB. Then tried expanding the dataset with number of augmented goals as 1 but again the data was too large and could not be executed even in COLAB.
+ 5. Since, it could not have been executed and hence we could not know what would it impact the accuracy, I started analyzing the new dataset and started comparing new augmented goal statements with the old ones.
+ 6. The analysis showed that there were certain agmented sentences which might not effect the accuracy, but there were certain sentences that would effect the accuracy but since it is not tested, it is still unknown.
 
 ### Haseeb:
 1. Executed ai2 master branch on local computer:
