@@ -32,7 +32,7 @@ Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/bl
  4. This inturn would result in an expanded dataset. The model might be able to learn better by introducing Question and Answer pairs that are highly positive cases and that are highly negative cases.
  5. Working currently on identifying the possible set of replacement tokens that would make sense with the instances under consideration.
  
- ####Phase 3:
+ #### Phase 3:
  1. I Created a dataset with extra 400 samples that are made up of additional question answer pairs which are different from each other by the prepositions that were present(if any) in the original question answer pair.
  2. I used Spacy similarity to identify how similar the sentences are with respect to presence of differnet prepositions in them which was not useful. I went ahead with using common sense knowledge to identify similar and dissimilar prepositions.
  3. The additional set consists of both positive and negative samples.
@@ -55,7 +55,7 @@ Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/bl
  2. So, I looked for data retrieval and modification techniques to use the same data source and retrieve more relevant information.
  3. By providing the same information mutltiple times with a little modification, the system can be trained to link a particular question to a particular set of answers. This modification can be done by replacing original words with new words having similar vector representation.
  4. The rationale behind this idea is that the machine will link a group of words with similar vector representations in the question to a group of words with similar vector representation in the answer, i.e, to link a word in query to a word in answer and create more such links with similar words finally forming a pair pattern. Thus, making the model look for words that mostly co-occur in patterns while looking for answers.
- 5. After reasearchhing a bit into it, the information retrieval task was an unrealistic goal to achieve in a short time. 
+ 5. After researchhing a bit into it, the information retrieval task was an unrealistic goal to achieve in a short time. 
  6. Two of our proposed approaches had data augmentation in common. So, by combining part of my approach of preparing the same questions with their synonyms and augmenting data we came up with one solution.
  7. To execute this approach, we replaced a random word in the question with its synonym and did the same with the answer thus increasing the dataset and providing the same information multiple times to train the model into chosing the intended answer.
 
@@ -75,17 +75,17 @@ Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/bl
 5. Learning about PyTorch and its usage to understand the code implementation.
 
 ### Haseeb:
-1.Executed ai2 master branch on local computer:
+1. Executed ai2 master branch on local computer:
         * Fixed issues related to library/module (CPU only modules)
-	*Training started succesfully but ran for nearly 2 days and then failed due to memory allocation error
-2.Executed ai2 stable branch on local computer:
-	Model ran for 1 epoch, created a checkpoint and then got stuck in a saving checkpoint loop - couldnt resolve further
-	Ran the evaluation script with the created checkpoint but ran into library version errors
-3.Executed ai2 master branch on colab:
-	lazy_trainer_dataloader error - fixed by using the stable branch
-4.Executed ai2 stable branch on colab:
-	Fixed the lazy_trainer_dataloader error by installing pytorch 1.2.0 and corresponding torchvision library
-	Ran into CUDA out of memory. So reduced the training data size
-5.Base model ran successfully. Obtained F1 score of 0.517 with 5000 training size
-6.Error sheet analysis
+	* Training started succesfully but ran for nearly 2 days and then failed due to memory allocation error
+2. Executed ai2 stable branch on local computer:
+	* Model ran for 1 epoch, created a checkpoint and then got stuck in a saving checkpoint loop - couldnt resolve further
+	* Ran the evaluation script with the created checkpoint but ran into library version errors
+3. Executed ai2 master branch on colab:
+	* lazy_trainer_dataloader error - fixed by using the stable branch
+4. Executed ai2 stable branch on colab:
+	* Fixed the lazy_trainer_dataloader error by installing pytorch 1.2.0 and corresponding torchvision library
+	* Ran into CUDA out of memory. So reduced the training data size
+5. Base model ran successfully. Obtained F1 score of 0.517 with 5000 training size
+6. Error sheet analysis
 
