@@ -54,8 +54,11 @@ Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/bl
  1. After looking at the dataset, going through McQueen model's report and comparing it with the source of the data, I noticed how the training data was retrieved.
  2. So, I looked for data retrieval and modification techniques to use the same data source and retrieve more relevant information.
  3. By providing the same information mutltiple times with a little modification, the system can be trained to link a particular question to a particular set of answers. This modification can be done by replacing original words with new words having similar vector representation.
- 4. The rationale behind this idea is that the machine will link a group of words with similar vector representations in the question to a group of words with similar vector representation in the answer.
- 
+ 4. The rationale behind this idea is that the machine will link a group of words with similar vector representations in the question to a group of words with similar vector representation in the answer, i.e, to link a word in query to a word in answer and create more such links with similar words finally forming a pair pattern. Thus, making the model look for words that mostly co-occur in patterns while looking for answers.
+ 5. After reasearchhing a bit into it, the information retrieval task was an unrealistic goal to achieve in a short time. 
+ 6. Two of our proposed approaches had data augmentation in common. So, by combining part of my approach of preparing the same questions with their synonyms and augmenting data we came up with one solution.
+ 7. To execute this approach, we replaced a random word in the question with its synonym and did the same with the answer thus increasing the dataset and providing the same information multiple times to train the model into chosing the intended answer.
+
 
 ### Simran:
 1. Ran the master version of the ai2 model on my local computer.
