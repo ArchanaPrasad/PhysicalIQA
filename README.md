@@ -63,8 +63,7 @@ Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/bl
  4. Solutions that we tried:
  	* Pick a question sentence and randomly select an index using random.shuffle() in python and do the same with the answer statement. Using NLTK package replace the random words with their synonyms.
 	* Instead of NTLK package used Word2Vec package from Gensim in the above step.
-	* Both the approaches did not work as expected so we finally used a repo 'https://github.com/jasonwei20/eda_nlp' which used both NLTK and WORDNET to perform 4 functions:
-	    *Synonym Replacement (SR), Random Insertion (RI), Random Swap (RS), Random Deletion (RD)
+	* Both the approaches did not work as expected so we finally used a repo https://github.com/jasonwei20/eda_nlp which used both NLTK and WORDNET to perform 4 functions: Synonym Replacement (SR), Random Insertion (RI), Random Swap (RS), Random Deletion (RD)
 	We did not have much control on our manipulation of the dataset using this repo though.
 	
 	
