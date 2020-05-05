@@ -119,7 +119,7 @@ Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/bl
   3. I started working on an algorithm to fetch context during runtime from internet
   4. Using wikipedia api libraries, I was able to design an algorithm, wiki_data_extractor, to use the question of an example as a query and fetch a wikipedia page object. Using this a summary passage can be extracted from to be used as context for selected example.
  
- #### Phase 3:
+ #### Phase 3 (Approach 2):
  1. I made  further enhancements to the wiki_data_extractor algorithm to rectify the initial search errors. Ouput file contains query, wikipedia result, wikipedia summary (train_wiki_data.csv)
  2. Also created a modified version of the script to combine the question and solutions of each example to create two queries and using them to fetch data from wikipedia (train_wiki_data_with_sols.csv)
  3. Wikipedia lookups for each example took about 1 to 2 seconds. For training dataset of  16,000+ examples the total runtime was 4+ hours. To reduce this I created a python script to run the algorithm parellely and then combine the resulting files. This reduces runtime to less than an hour.
