@@ -132,5 +132,6 @@ Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/bl
  2. Also created a modified version of the script to combine the question and solutions of each example to create two queries and using them to fetch data from wikipedia (train_wiki_data_with_sols.csv)
  3. Wikipedia lookups for each example took about 1 to 2 seconds. For training dataset of  16,000+ examples the total runtime was 4+ hours. To reduce this I created a python script to run the algorithm parellely and then combine the resulting files. This reduces runtime to less than an hour.
  4. Tried to execute McQueen model on colab (McQueen_colab.ipynb) as well as install elasticsearch on colab. Ran into elasticsearch server related issues and other 'files missing' error.
+ 5. Output files from approach-2 can be found here: https://drive.google.com/drive/folders/1Uu-FRjUPOb0hO3q0-j508dr8DdfNegV2?usp=sharing
 
 
