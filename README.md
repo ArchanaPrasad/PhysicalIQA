@@ -100,7 +100,7 @@ Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/bl
  3. Implemented this to augment the dataset.
     * Since our dataset was in different format, the codebase for this had to be changed and adjusted according to our dataset format.
     * Number of augments was given as a parameter to the code.
- 4. Tried expanding the dataset with number of augmented goals as 3 at first but the data was too large and could not be executed even in COLAB. Then tried expanding the dataset with number of augmented goals as 1 but again the data was too large and could not be executed even in COLAB. The link for the augmented dataset is: https://drive.google.com/open?id=1cgsAW-iQyaBIaf4RYIIQCQIaxr5--Ny5
+ 4. Tried expanding the dataset with number of augmented goals as 3 at first but the data was too large and could not be executed even in COLAB. Then tried expanding the dataset with number of augmented goals as 1 but again the data was too large and could not be executed even in COLAB. The link for the augmented dataset is: https://drive.google.com/open?id=1cgsAW-iQyaBIaf4RYIIQCQIaxr5--Ny5 (accessible through ASU ID only).
  5. Since, it could not have been executed and hence we could not know what would it impact the accuracy, I started analyzing the new dataset and started comparing new augmented goal statements with the old ones.
  6. The analysis showed that there were certain agmented sentences which might not effect the accuracy, but there were certain sentences that would effect the accuracy but since it is not tested, it is still unknown.
 
