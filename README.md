@@ -55,11 +55,19 @@ Link to the Readme.md file of the model used - https://github.com/isi-nlp/ai2/bl
  2. So, I looked for data retrieval and modification techniques to use the same data source and retrieve more relevant information.
  3. By providing the same information mutltiple times with a little modification, the system can be trained to link a particular question to a particular set of answers. This modification can be done by replacing original words with new words having similar vector representation.
  4. The rationale behind this idea is that the machine will link a group of words with similar vector representations in the question to a group of words with similar vector representation in the answer, i.e, to link a word in query to a word in answer and create more such links with similar words finally forming a pair pattern. Thus, making the model look for words that mostly co-occur in patterns while looking for answers.
- 5. After researchhing a bit into it, the information retrieval task was an unrealistic goal to achieve in a short time. 
- 6. Two of our proposed approaches had data augmentation in common. So, by combining part of my approach of preparing the same questions with their synonyms and augmenting data we came up with one solution.
- 7. To execute this approach, we replaced a random word in the question with its synonym and did the same with the answer thus increasing the dataset and providing the same information multiple times to train the model into chosing the intended answer.
-
-
+ 
+  #### Phase 3:
+ 1. After researching a bit into it, the information retrieval task was an unrealistic goal to achieve in a short time. 
+ 2. Two of our proposed approaches had data augmentation in common. So, by combining part of my approach of preparing the same questions with their synonyms and augmenting data we came up with one solution.
+ 3. To execute this approach, we replaced a random word in the question with its synonym and did the same with the answer thus increasing the dataset and providing the same information multiple times to train the model into chosing the intended answer.
+ 4. Solutions that we tried:
+ 	* Pick a question sentence and randomly select an index using random.shuffle() in python and do the same with the answer statement. Using NLTK package replace the random words with their synonyms.
+	* Instead of NTLK package used Word2Vec package from Gensim in the above step.
+	* Both the approaches did not work as expected so we finally used a repo 'https://github.com/jasonwei20/eda_nlp' which used both NLTK and WORDNET to perform 4 functions:
+	    *Synonym Replacement (SR), Random Insertion (RI), Random Swap (RS), Random Deletion (RD)
+	We did not have much control on our manipulation of the dataset using this repo though.
+	
+	
 ### Simran:
  #### Phase 1:
  1. Ran the master version of the ai2 model on my local computer.
